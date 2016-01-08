@@ -18,13 +18,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var saveButton: NSButton!
     
+    var settings : RedmineSettings {
+        get {
+           return RedmineSettings()
+        }
+    }
+    
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        let defaults = NSUserDefaults.standardUserDefaults()
-
-        if let url = defaults.stringForKey("RedmineURL") {
+        if let url = settings.url {
             urlTextField.stringValue = url
         }
-        if let token = defaults.stringForKey("ApiToken") {
+        if let token = settings.token {
             tokenTextField.stringValue = token
         }
     }
@@ -34,10 +38,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     @IBAction func saveSettings(sender: NSButton) {
-        let defaults = NSUserDefaults.standardUserDefaults()
-        defaults.setValue(urlTextField.stringValue, forKey: "RedmineURL")
-        defaults.setValue(tokenTextField.stringValue, forKey: "ApiToken")
-        NSApplication.sharedApplication().terminate(self)
+        settings.url = urlTextField.stringValue
+        settings.token = tokenTextField.stringValue
+        quitApplication(sender)
     }
 
     @IBAction func quitApplication(sender: AnyObject) {

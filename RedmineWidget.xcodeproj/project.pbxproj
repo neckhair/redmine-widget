@@ -11,6 +11,13 @@
 		4A62979C1C3FE5A300A0DE01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A62979B1C3FE5A300A0DE01 /* Assets.xcassets */; };
 		4A62979F1C3FE5A300A0DE01 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A62979D1C3FE5A300A0DE01 /* MainMenu.xib */; };
 		4A6297AA1C3FE5A300A0DE01 /* RedmineWidgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6297A91C3FE5A300A0DE01 /* RedmineWidgetTests.swift */; };
+		4A6297D21C3FF8A700A0DE01 /* RedmineSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6297D11C3FF8A700A0DE01 /* RedmineSettings.swift */; };
+		4A6297D91C40020000A0DE01 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A6297BA1C3FEE3A00A0DE01 /* NotificationCenter.framework */; };
+		4A6297DE1C40020000A0DE01 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6297DD1C40020000A0DE01 /* TodayViewController.swift */; };
+		4A6297E11C40020000A0DE01 /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A6297DF1C40020000A0DE01 /* TodayViewController.xib */; };
+		4A6297E51C40020000A0DE01 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A6297E31C40020000A0DE01 /* InfoPlist.strings */; };
+		4A6297E81C40020000A0DE01 /* RedmineWidgetTodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4A6297D81C40020000A0DE01 /* RedmineWidgetTodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4A6297ED1C40076100A0DE01 /* RedmineSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6297D11C3FF8A700A0DE01 /* RedmineSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -21,7 +28,28 @@
 			remoteGlobalIDString = 4A6297951C3FE5A300A0DE01;
 			remoteInfo = RedmineWidget;
 		};
+		4A6297E61C40020000A0DE01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A62978E1C3FE5A300A0DE01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A6297D71C40020000A0DE01;
+			remoteInfo = RedmineWidgetTodayExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4A6297CE1C3FEE3A00A0DE01 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4A6297E81C40020000A0DE01 /* RedmineWidgetTodayExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4A6297961C3FE5A300A0DE01 /* RedmineWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedmineWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,6 +60,15 @@
 		4A6297A51C3FE5A300A0DE01 /* RedmineWidgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedmineWidgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A6297A91C3FE5A300A0DE01 /* RedmineWidgetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedmineWidgetTests.swift; sourceTree = "<group>"; };
 		4A6297AB1C3FE5A300A0DE01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A6297BA1C3FEE3A00A0DE01 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		4A6297CF1C3FF00F00A0DE01 /* RedmineWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RedmineWidget.entitlements; sourceTree = "<group>"; };
+		4A6297D11C3FF8A700A0DE01 /* RedmineSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RedmineSettings.swift; path = Common/RedmineSettings.swift; sourceTree = "<group>"; };
+		4A6297D81C40020000A0DE01 /* RedmineWidgetTodayExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RedmineWidgetTodayExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A6297DC1C40020000A0DE01 /* RedmineWidgetTodayExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RedmineWidgetTodayExtension.entitlements; sourceTree = "<group>"; };
+		4A6297DD1C40020000A0DE01 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		4A6297E01C40020000A0DE01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
+		4A6297E21C40020000A0DE01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A6297E41C40020000A0DE01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,14 +86,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4A6297D51C40020000A0DE01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A6297D91C40020000A0DE01 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		4A62978D1C3FE5A300A0DE01 = {
 			isa = PBXGroup;
 			children = (
+				4A6297D01C3FF84100A0DE01 /* Common */,
 				4A6297981C3FE5A300A0DE01 /* RedmineWidget */,
 				4A6297A81C3FE5A300A0DE01 /* RedmineWidgetTests */,
+				4A6297DA1C40020000A0DE01 /* RedmineWidgetTodayExtension */,
+				4A6297B91C3FEE3A00A0DE01 /* Frameworks */,
 				4A6297971C3FE5A300A0DE01 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,6 +114,7 @@
 			children = (
 				4A6297961C3FE5A300A0DE01 /* RedmineWidget.app */,
 				4A6297A51C3FE5A300A0DE01 /* RedmineWidgetTests.xctest */,
+				4A6297D81C40020000A0DE01 /* RedmineWidgetTodayExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +122,7 @@
 		4A6297981C3FE5A300A0DE01 /* RedmineWidget */ = {
 			isa = PBXGroup;
 			children = (
+				4A6297CF1C3FF00F00A0DE01 /* RedmineWidget.entitlements */,
 				4A6297991C3FE5A300A0DE01 /* AppDelegate.swift */,
 				4A62979B1C3FE5A300A0DE01 /* Assets.xcassets */,
 				4A62979D1C3FE5A300A0DE01 /* MainMenu.xib */,
@@ -90,6 +140,42 @@
 			path = RedmineWidgetTests;
 			sourceTree = "<group>";
 		};
+		4A6297B91C3FEE3A00A0DE01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A6297BA1C3FEE3A00A0DE01 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A6297D01C3FF84100A0DE01 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4A6297D11C3FF8A700A0DE01 /* RedmineSettings.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		4A6297DA1C40020000A0DE01 /* RedmineWidgetTodayExtension */ = {
+			isa = PBXGroup;
+			children = (
+				4A6297DD1C40020000A0DE01 /* TodayViewController.swift */,
+				4A6297DF1C40020000A0DE01 /* TodayViewController.xib */,
+				4A6297E21C40020000A0DE01 /* Info.plist */,
+				4A6297E31C40020000A0DE01 /* InfoPlist.strings */,
+				4A6297DB1C40020000A0DE01 /* Supporting Files */,
+			);
+			path = RedmineWidgetTodayExtension;
+			sourceTree = "<group>";
+		};
+		4A6297DB1C40020000A0DE01 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A6297DC1C40020000A0DE01 /* RedmineWidgetTodayExtension.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -100,10 +186,12 @@
 				4A6297921C3FE5A300A0DE01 /* Sources */,
 				4A6297931C3FE5A300A0DE01 /* Frameworks */,
 				4A6297941C3FE5A300A0DE01 /* Resources */,
+				4A6297CE1C3FEE3A00A0DE01 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4A6297E71C40020000A0DE01 /* PBXTargetDependency */,
 			);
 			name = RedmineWidget;
 			productName = RedmineWidget;
@@ -128,6 +216,23 @@
 			productReference = 4A6297A51C3FE5A300A0DE01 /* RedmineWidgetTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		4A6297D71C40020000A0DE01 /* RedmineWidgetTodayExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A6297E91C40020000A0DE01 /* Build configuration list for PBXNativeTarget "RedmineWidgetTodayExtension" */;
+			buildPhases = (
+				4A6297D41C40020000A0DE01 /* Sources */,
+				4A6297D51C40020000A0DE01 /* Frameworks */,
+				4A6297D61C40020000A0DE01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RedmineWidgetTodayExtension;
+			productName = RedmineWidgetTodayExtension;
+			productReference = 4A6297D81C40020000A0DE01 /* RedmineWidgetTodayExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -140,10 +245,23 @@
 				TargetAttributes = {
 					4A6297951C3FE5A300A0DE01 = {
 						CreatedOnToolsVersion = 7.2;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+						};
 					};
 					4A6297A41C3FE5A300A0DE01 = {
 						CreatedOnToolsVersion = 7.2;
 						TestTargetID = 4A6297951C3FE5A300A0DE01;
+					};
+					4A6297D71C40020000A0DE01 = {
+						CreatedOnToolsVersion = 7.2;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -162,6 +280,7 @@
 			targets = (
 				4A6297951C3FE5A300A0DE01 /* RedmineWidget */,
 				4A6297A41C3FE5A300A0DE01 /* RedmineWidgetTests */,
+				4A6297D71C40020000A0DE01 /* RedmineWidgetTodayExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -183,6 +302,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4A6297D61C40020000A0DE01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A6297E11C40020000A0DE01 /* TodayViewController.xib in Resources */,
+				4A6297E51C40020000A0DE01 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -191,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A62979A1C3FE5A300A0DE01 /* AppDelegate.swift in Sources */,
+				4A6297D21C3FF8A700A0DE01 /* RedmineSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +331,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4A6297D41C40020000A0DE01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A6297ED1C40076100A0DE01 /* RedmineSettings.swift in Sources */,
+				4A6297DE1C40020000A0DE01 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -209,6 +347,11 @@
 			isa = PBXTargetDependency;
 			target = 4A6297951C3FE5A300A0DE01 /* RedmineWidget */;
 			targetProxy = 4A6297A61C3FE5A300A0DE01 /* PBXContainerItemProxy */;
+		};
+		4A6297E71C40020000A0DE01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A6297D71C40020000A0DE01 /* RedmineWidgetTodayExtension */;
+			targetProxy = 4A6297E61C40020000A0DE01 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -219,6 +362,22 @@
 				4A62979E1C3FE5A300A0DE01 /* Base */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		4A6297DF1C40020000A0DE01 /* TodayViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A6297E01C40020000A0DE01 /* Base */,
+			);
+			name = TodayViewController.xib;
+			sourceTree = "<group>";
+		};
+		4A6297E31C40020000A0DE01 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A6297E41C40020000A0DE01 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -308,7 +467,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RedmineWidget/RedmineWidget.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = RedmineWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ch.neckhair.RedmineWidget;
@@ -320,7 +481,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RedmineWidget/RedmineWidget.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = RedmineWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ch.neckhair.RedmineWidget;
@@ -354,6 +517,32 @@
 			};
 			name = Release;
 		};
+		4A6297EA1C40020000A0DE01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = RedmineWidgetTodayExtension/RedmineWidgetTodayExtension.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RedmineWidgetTodayExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.neckhair.RedmineWidget.RedmineWidgetTodayExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4A6297EB1C40020000A0DE01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = RedmineWidgetTodayExtension/RedmineWidgetTodayExtension.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RedmineWidgetTodayExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.neckhair.RedmineWidget.RedmineWidgetTodayExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -373,6 +562,7 @@
 				4A6297B01C3FE5A300A0DE01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A6297B11C3FE5A300A0DE01 /* Build configuration list for PBXNativeTarget "RedmineWidgetTests" */ = {
 			isa = XCConfigurationList;
@@ -381,6 +571,16 @@
 				4A6297B31C3FE5A300A0DE01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A6297E91C40020000A0DE01 /* Build configuration list for PBXNativeTarget "RedmineWidgetTodayExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A6297EA1C40020000A0DE01 /* Debug */,
+				4A6297EB1C40020000A0DE01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

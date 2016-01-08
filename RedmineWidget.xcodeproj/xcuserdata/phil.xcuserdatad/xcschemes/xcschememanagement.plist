@@ -9,6 +9,16 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>RedmineWidgetToday.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>RedmineWidgetTodayExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +28,16 @@
 			<true/>
 		</dict>
 		<key>4A6297A41C3FE5A300A0DE01</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4A6297B71C3FEE3900A0DE01</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4A6297D71C40020000A0DE01</key>
 		<dict>
 			<key>primary</key>
 			<true/>
