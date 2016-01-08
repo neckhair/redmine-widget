@@ -15,13 +15,13 @@ class RedmineSettings {
         }
     }
     
-    var url : String? {
+    var url : NSURL? {
         get {
-            return defaults.stringForKey("RedmineURL")
+            return defaults.URLForKey("RedmineURL")
         }
         
         set(newUrl) {
-            defaults.setValue(newUrl, forKey: "RedmineURL")
+            defaults.setURL(newUrl, forKey: "RedmineURL")
         }
     }
     

@@ -26,7 +26,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         if let url = settings.url {
-            urlTextField.stringValue = url
+            urlTextField.stringValue = url.absoluteString
         }
         if let token = settings.token {
             tokenTextField.stringValue = token
@@ -38,7 +38,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     @IBAction func saveSettings(sender: NSButton) {
-        settings.url = urlTextField.stringValue
+        settings.url = NSURL(string: urlTextField.stringValue)
         settings.token = tokenTextField.stringValue
         quitApplication(sender)
     }

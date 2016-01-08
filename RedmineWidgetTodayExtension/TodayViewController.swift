@@ -21,7 +21,7 @@ class TodayViewController: NSViewController, NCWidgetProviding {
         let settings = RedmineSettings()
         
         if let url = settings.url {
-            urlLabel.stringValue = url
+            urlLabel.stringValue = url.absoluteString
         } else {
             urlLabel.stringValue = "No URL configured!"
         }
