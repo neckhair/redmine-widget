@@ -1,0 +1,6 @@
+framework module Pods_RedmineWidgetTodayExtension {
+  umbrella header "Pods-RedmineWidgetTodayExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}
